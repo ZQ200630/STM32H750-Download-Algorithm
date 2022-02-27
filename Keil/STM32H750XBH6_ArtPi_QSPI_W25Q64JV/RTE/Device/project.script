@@ -1,0 +1,4 @@
+load STM32H750XBHx 
+project name STCubeGenerated 
+project toolchain "MDK-ARM V5" 
+project path "D:\workspace\work\stm32\stm32h750\STM32H750XBH6_ArtPi_QSPI_W25Q64JV\RTE\Device\STM32H750XBHx\" 

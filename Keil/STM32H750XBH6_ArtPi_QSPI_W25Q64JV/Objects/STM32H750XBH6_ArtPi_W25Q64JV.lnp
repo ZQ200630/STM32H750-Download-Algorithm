@@ -1,0 +1,21 @@
+--cpu Cortex-M7.fp.dp
+".\objects\flashprg.o"
+".\objects\flashdev.o"
+".\objects\main.o"
+".\objects\stm32h7xx_it.o"
+".\objects\system_stm32h7xx.o"
+".\objects\quadspi.o"
+".\objects\stm32h7xx_hal_msp.o"
+".\objects\stm32h7xx_hal.o"
+".\objects\stm32h7xx_hal_cortex.o"
+".\objects\stm32h7xx_hal_gpio.o"
+".\objects\stm32h7xx_hal_mdma.o"
+".\objects\stm32h7xx_hal_pwr.o"
+".\objects\stm32h7xx_hal_pwr_ex.o"
+".\objects\stm32h7xx_hal_qspi.o"
+".\objects\stm32h7xx_hal_rcc.o"
+".\objects\stm32h7xx_hal_rcc_ex.o"
+--strict --scatter ".\Target.lin"
+--diag_suppress L6305 --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32H750XBH6_ArtPi_W25Q64JV.map" -o .\Objects\STM32H750XBH6_ArtPi_W25Q64JV.axf
